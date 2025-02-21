@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản phẩm - PEACH BLOSSOM</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Thanh điều hướng -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="https://dynamic.design.com/preview/logodraft/af051f40-c98d-4ae2-9542-c7c647da9ea2/image/large.png" alt="Logo Bella Clothes" class="logo-img">
+            <span>Peach Blossom</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="products.html">Sản phẩm</a></li>
+                <li><a href="about.html">Giới thiệu</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+        <!-- Bộ lọc sản phẩm -->
+<section class="filter-container">
+    <button id="filter-button">Lọc sản phẩm</button>
+    <div class="filter-dropdown">
+        <label for="color-filter">Màu sắc:</label>
+        <select id="color-filter">
+            <option value="all">Tất cả</option>
+            <option value="white">Trắng</option>
+            <option value="black">Đen</option>
+            <option value="other">Màu Khác</option>
+        </select>
+
+        <label for="price-filter">Giá:</label>
+        <select id="price-filter">
+            <option value="all">Tất cả</option>
+            <option value="low">Dưới 500k</option>
+            <option value="medium">500k - 1 triệu</option>
+            <option value="high">Trên 1 triệu</option>
+        </select>
+
+        <button id="apply-filter">Áp dụng</button>
+    </div>
+</section>
+
+
+    <!-- Phần hiển thị sản phẩm -->
+    <section class="products">
+        <h2>Sản phẩm nổi bật</h2>
+        <div class="product-list">
+            <!-- Sản phẩm 1 -->
+            <div class="product-card" data-color="white" data-price="low">
+                <img src="https://i.pinimg.com/474x/dd/0b/4b/dd0b4b108144691c6ffb6ab12530cfbd.jpg" alt="Sản phẩm 1">
+                <h3>Áo thun Basic</h3>
+                <p class="price">310,000đ</p>
+                <button class="buy-btn">Mua ngay</button>
+            </div>
+
+            <!-- Sản phẩm 2 -->
+            <div class="product-card" data-color="white" data-price="high">
+                <img src="https://i.pinimg.com/474x/28/de/c9/28dec9bdce0882ed44a497bfcac63673.jpg" alt="Sản phẩm 2">
+                <h3>Đầm dạ hội</h3>
+                <p class="price">1,200,000đ</p>
+                <button class="buy-btn">Mua ngay</button>
+            </div>
+
+            <!-- Sản phẩm 3 -->
+            <div class="product-card" data-color="other" data-price="medium">
+                <img src="https://i.pinimg.com/474x/61/51/1e/61511e79c848e3120d5e5fcbfaf8b5d6.jpg" alt="Sản phẩm 3">
+                <h3>Quần jean nữ</h3>
+                <p class="price">790,000đ</p>
+                <button class="buy-btn">Mua ngay</button>
+            </div>
+
+            <!-- Sản phẩm 4 -->
+            <div class="product-card" data-color="white" data-price="low">
+                <img src="https://i.pinimg.com/474x/06/f9/8f/06f98ff30edf347061958b3ccea91cea.jpg" alt="Sản phẩm 4">
+                <h3>Áo sơ mi trắng</h3>
+                <p class="price">150,000đ</p>
+                <button class="buy-btn">Mua ngay</button>
+            </div>
+
+            <div class="product-card" data-color="white" data-price="high">
+                <img src="https://i.pinimg.com/474x/2e/34/50/2e34501b9bd79615b0375a8e9ce5fa51.jpg" alt="Sản phẩm 4">
+                <h3>Áo sơ mi trắng</h3>
+                <p class="price">1,500,000đ</p>
+                <button class="buy-btn">Mua ngay</button>
+            </div>
+
+            <div class="product-card" data-color="black" data-price="medium">
+                <img src="https://i.pinimg.com/474x/8c/9c/49/8c9c49483afa95fa17f2c692e0c88ea6.jpg" alt="Sản phẩm 4">
+                <h3>Áo sơ mi trắng</h3>
+                <p class="price">670,000đ</p>
+                <button class="buy-btn">Mua ngay</button>
+            </div>
+
+            <div class="product-card" data-color="black" data-price="low">
+                <img src="https://i.pinimg.com/474x/d7/17/93/d71793094d4ccde1307ae57b93082c0c.jpg" alt="Sản phẩm 4">
+                <h3>Áo sơ mi trắng</h3>
+                <p class="price">280,000đ</p>
+                <button class="buy-btn">Mua ngay</button>
+            </div>
+
+            <div class="product-card" data-color="black" data-price="high">
+                <img src="https://i.pinimg.com/474x/c0/98/ca/c098caa072f9c445a7094b5d1a22d9ff.jpg" alt="Sản phẩm 4">
+                <h3>Áo sơ mi trắng</h3>
+                <p class="price">2,000,000đ</p>
+                <button class="buy-btn">Mua ngay</button>
+            </div>
+
+            <div class="product-card" data-color="white" data-price="medium">
+                <img src="https://i.pinimg.com/474x/02/77/c3/0277c3267827ac1bfc21fe47e6dd5887.jpg" alt="Sản phẩm 4">
+                <h3>Áo sơ mi trắng</h3>
+                <p class="price">800,000đ</p>
+                <button class="buy-btn">Mua ngay</button>
+            </div>
+
+            <div class="product-card" data-color="white" data-price="low">
+                <img src="https://i.pinimg.com/474x/83/ac/a7/83aca700a60edab4d10a7bf6ca617e8a.jpg" alt="Sản phẩm 4">
+                <h3>Áo sơ mi trắng</h3>
+                <p class="price">450,000đ</p>
+                <button class="buy-btn">Mua ngay</button>
+            </div>
+
+            <div class="product-card" data-color="white" data-price="high">
+                <img src="https://i.pinimg.com/474x/68/8c/9a/688c9aa583fcdecad8297f0f19bae682.jpg" alt="Sản phẩm 4">
+                <h3>Áo sơ mi trắng</h3>
+                <p class="price">1,750,000đ</p>
+                <button class="buy-btn">Mua ngay</button>
+            </div>
+
+            <div class="product-card" data-color="other" data-price="medium">
+                <img src="https://i.pinimg.com/474x/96/b1/53/96b1537f6faf85e72eec543db6372a91.jpg" alt="Sản phẩm 4">
+                <h3>Áo sơ mi trắng</h3>
+                <p class="price">630,000đ</p>
+                <button class="buy-btn">Mua ngay</button>
+            </div>
+    
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <p>&copy; 2025 Peach Blossom. Tất cả quyền lợi được bảo vệ.</p>
+    </footer>
+    
+</body>
+</html>
