@@ -22,6 +22,17 @@ body {
     border-bottom: 1px solid #ccc; /* Thêm đường viền dưới navbar */
 }
 
+.navbar a {
+    text-decoration: none;  /* Xóa gạch chân */
+    color: black;  /* Màu chữ */
+    font-weight: bold;  /* Làm đậm chữ */
+    margin-right: 0px;  /* Khoảng cách giữa các mục */
+}
+
+.navbar a:hover {
+    background-color: #f0f0f0;  /* Thêm hiệu ứng khi rê chuột */
+}
+
 .navbar .logo {
     color: black; /* Màu chữ logo đen */
     font-size: 24px;
@@ -41,7 +52,7 @@ body {
     flex: 1; /* Giúp điều chỉnh vị trí menu cân đối */
     display: flex;
     justify-content: center; /* Căn giữa menu */
-    margin-left: 430px;
+    margin-left: 250px;
 }
 
 .navbar nav ul {
@@ -101,14 +112,22 @@ body {
     flex-wrap: wrap;
 }
 
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 cột */
+    gap: 20px; /* Khoảng cách giữa các sản phẩm */
+}
+
 .product-card {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 23%;
     text-align: center;
     transition: transform 0.3s ease;
+    margin-bottom: 20px; /* Khoảng cách giữa các hàng */
+    box-sizing: border-box;
 }
 
 .product-card:hover {
