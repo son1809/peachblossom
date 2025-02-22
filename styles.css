@@ -309,3 +309,112 @@ footer {
     border-radius: 5px;
     font-size: 14px;
 }
+/* Responsive cho mobile */
+@media (max-width: 768px) {
+    .product-container {
+        display: flex;
+        flex-direction: column; /* Hiển thị từng sản phẩm 1 hàng */
+        align-items: center; /* Căn giữa sản phẩm */
+    }
+
+    .product-card {
+        width: 90% !important; /* Chiếm gần hết màn hình, tránh bị co nhỏ */
+        max-width: 400px; /* Giới hạn chiều rộng tối đa */
+    }
+
+    .product-card img {
+        height: auto; /* Giữ tỷ lệ gốc của ảnh */
+        max-height: 300px; /* Giới hạn chiều cao để không quá to */
+    }
+}
+
+/* Ẩn menu moblie */
+@media (max-width: 768px) {
+    .navbar {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px; /* Điều chỉnh khoảng cách */
+        width: 100%; /* Đảm bảo navbar chiếm toàn bộ chiều rộng */
+        box-sizing: border-box; /* Đảm bảo padding được tính vào chiều rộng */
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .navbar nav {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: white;
+        text-align: center;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        box-sizing: border-box; /* Đảm bảo padding được tính vào chiều rộng */
+    }
+
+    .navbar nav.active {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 0;
+    }
+
+    .navbar nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Căn giữa chữ */
+        gap: 15px;
+        padding: 0;
+        margin: 0;
+        width: 100%; /* Đảm bảo menu chiếm toàn bộ chiều rộng */
+        box-sizing: border-box; /* Đảm bảo padding được tính vào chiều rộng */
+    }
+
+    .navbar nav ul li {
+        list-style: none;
+        width: 100%; /* Đảm bảo các mục chiếm toàn bộ chiều rộng */
+    }
+
+    .navbar nav ul li a {
+        display: block;
+        padding: 10px;
+        font-size: 16px; /* Giảm kích thước chữ */
+        font-weight: bold;
+        color: black;
+        text-decoration: none;
+        width: 100%;
+        text-align: center; /* Căn chữ vào giữa */
+        box-sizing: border-box; /* Đảm bảo padding được tính vào chiều rộng */
+    }
+
+    .navbar nav ul li a:hover {
+        background-color: #f0f0f0;
+    }
+
+    /* Điều chỉnh cho menu chính */
+    .menu {
+        text-align: center; /* Căn giữa văn bản trong menu */
+        padding: 0; /* Loại bỏ padding thừa */
+        margin: 0; /* Loại bỏ margin thừa */
+        width: 100%; /* Đảm bảo menu chiếm toàn bộ chiều rộng */
+        max-width: 100%; /* Đảm bảo menu không vượt quá chiều rộng màn hình */
+        box-sizing: border-box; /* Đảm bảo padding được tính vào chiều rộng */
+    }
+
+    .menu li {
+        display: block; /* Đảm bảo các mục menu chiếm toàn bộ chiều rộng */
+        width: 100%;
+    }
+
+    .menu li a {
+        font-size: 16px; /* Giảm kích thước chữ */
+        padding: 12px 0; /* Điều chỉnh padding */
+        box-sizing: border-box; /* Đảm bảo padding được tính vào chiều rộng */
+    }
+}
