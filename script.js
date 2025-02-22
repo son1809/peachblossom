@@ -44,6 +44,3 @@ document.addEventListener("DOMContentLoaded", function () {
     // Lọc khi nhấn "Áp dụng"
     applyFilter.addEventListener("click", filterProducts);
 });
-function toggleMenu() {
-    document.querySelector("nav").classList.toggle("active"); // Toggle class 'active' trên menu di động
-}
